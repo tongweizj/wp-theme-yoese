@@ -3,7 +3,7 @@
  * The header for our theme.
  *
  * Displays all of the <head> section and everything up till <div id="content">
- *
+ * 
  * @package Yoese
  * @since Yoese 1.0
  */
@@ -14,7 +14,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
+<link type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri() ?>/aside/main.css" rel="stylesheet">
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>

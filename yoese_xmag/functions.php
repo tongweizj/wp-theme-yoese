@@ -136,40 +136,40 @@ add_action( 'wp_enqueue_scripts', 'yoese_scripts' );
 function yoese_widgets_init() {
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Top Item Box', 'yoese' ),
-		'id'            => 'top_item_box',
+		'name'          => esc_html__( 'Index Banner Big', 'yoese' ),
+		'id'            => 'index_banner_big',
 		'description'   => '',
-		'before_widget' => '<div class="top-item-box"> ',
+		'before_widget' => '<div class="index-banner-big"> ',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Index Top Big Box', 'yoese' ),
-		'id'            => 'index_top_big_box',
+		'name'          => esc_html__( 'Index Banner S1', 'yoese' ),
+		'id'            => 'index_banner_s1',
 		'description'   => '',
-		'before_widget' => '<div class="big-pic"> ',
+		'before_widget' => '<div class="banner-s3"> ',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Index Top S1 Box', 'yoese' ),
-		'id'            => 'index_top_s1_box',
+		'name'          => esc_html__( 'Index Banner S2', 'yoese' ),
+		'id'            => 'index_banner_s2',
 		'description'   => '',
-		'before_widget' => '<div class="big2-pic big2-pic-index big2-pic-index-top"> ',
+		'before_widget' => '<div class="banner-s3"> ',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',
 	) );	
 
 	register_sidebar( array(
-		'name'          => esc_html__( 'Index Top S2 Box', 'yoese' ),
-		'id'            => 'index_top_s2_box',
+		'name'          => esc_html__( 'Index Banner S3', 'yoese' ),
+		'id'            => 'index_banner_s3',
 		'description'   => '',
-		'before_widget' => '<div class="big2-pic big2-pic-index big2-pic-index-bottom"> ',
+		'before_widget' => '<div class="banner-s3"> ',
 		'after_widget'  => '</div>',
 		'before_title'  => '',
 		'after_title'   => '',
@@ -446,3 +446,6 @@ add_action('init', 'do_output_buffer');
 function do_output_buffer() {
         ob_start();
 }
+
+
+require get_stylesheet_directory() . '/aside/functions-theme.php';
